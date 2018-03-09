@@ -14,7 +14,7 @@ namespace ImgBbDemo
             try
             {
                 var imgBbService = new ImgBbService();
-                imgBbService.LoginAsync("<your imgbb username>", "<your imgbb password>", CancellationToken.None).Wait();
+                imgBbService.LoginAsync("redplane", "Redplane1", CancellationToken.None).Wait();
 
                 var files = new[] {"D:\\Images\\1.png", "D:\\Images\\2.png", "D:\\Images\\3.jpg"};
                 var tasks = new List<Task>();
