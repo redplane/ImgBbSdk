@@ -1,7 +1,11 @@
 language: csharp
 solution: ImgBbSdk.sln
 mono: none
-dotnet: 2.1.300-preview1-008174
+
+# Before installation.
+before_install:
+- sudo apt-get install dotnet-sdk-2.1.300-preview2-008533
+
 # Dependency installation phrase.
 install:
 - dotnet restore ImgBbSdk.sln
