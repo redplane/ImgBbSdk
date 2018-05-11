@@ -1,6 +1,11 @@
 language: csharp
 solution: ImgBbSdk.sln
-
+mono: none
+dotnet: 2.1.300-preview1-008174
 # Dependency installation phrase.
 install:
-- nuget restore ImgBbSdk.sln
+- dotnet restore ImgBbSdk.sln
+
+# Build phrase.
+script:
+- dotnet build ImgBbSdk.sln
