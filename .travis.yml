@@ -4,6 +4,8 @@ mono: none
 
 # Before installation.
 before_install:
+- sudo apt-get install apt-transport-https
+- sudo apt-get update
 - sudo apt-get install dotnet-sdk-2.1.300-preview1-008174
 
 # Dependency installation phrase.
